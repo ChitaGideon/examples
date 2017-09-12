@@ -11,7 +11,7 @@ module.exports = appInfo => {
   
   config.sequelize = {
     dialect: 'sqlite', // support: mysql, mariadb, postgres, mssql
-    storage: path.join(app.baseDir, 'db/main.db')
+    storage: path.join(appInfo.baseDir, 'db/main.db')
   //   dialect: 'postgres', // support: mysql, mariadb, postgres, mssql
   //   database: 'example-dev',
   //   host: 'localhost',
